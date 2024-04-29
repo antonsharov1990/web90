@@ -1,0 +1,9 @@
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0.08%;
+bottom: 0.08%;
+
+background: #51565F;
