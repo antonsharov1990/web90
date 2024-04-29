@@ -1,0 +1,112 @@
+
+html {
+    height: 100%;
+    font-size: 1 em;
+}
+
+body {
+    height: 100%;
+
+    /* background-color: rgb(158, 209, 110); */
+    /* background-image: url("./../img/backgr.png"); */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center top; */
+    /* background-position: right bottom; */
+
+    /* background-size: 50%; */
+    /* background-size: contain; */
+    /* background-size: cover; */
+
+
+}
+
+header{
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+main{
+    margin-top: 30rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    /* position: fixed; */
+    /* right: 0; */
+    /* bottom: 100px; */
+    /* position: absolute; */
+    position: relative;
+    display: block;
+
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.account{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* .soc{
+    height: 2rem;
+    border-radius: 8px;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+    vertical-align:middle;
+} */
+
+.account>p>img{
+    height: 2rem;
+    border-radius: 8px;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    vertical-align:middle;
+}
+
+.account>p>label{
+    font-size: 1rem;
+    margin-left: 0rem;
+    margin-right: 1rem;
+}
+
+.sales{
+    /* white-space: nowrap; */
+}
+
+.sale{
+    display: inline-block;
+}
+
+.categories{
+    /* white-space: nowrap; */
+}
+
+.categories_card{
+    display: inline-block;
+}
+
+
+.goods{
+    /* white-space: nowrap; */
+}
+
+.goods_card{
+    display: inline-block;
+}
+
+.advertising{
+    /* white-space: nowrap; */
+}
+
+.advertising_card{
+    display: inline-block;
+}
