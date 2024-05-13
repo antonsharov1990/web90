@@ -116,9 +116,20 @@ footer{
 }
 
 .search{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     text-align: center;
+}
+
+#search_left_half{
+    display: inline-block;
+    text-align: right;
+    width: 50%;
+}
+
+.search>div{
+    display: inline-block;
+    vertical-align:baseline;
 }
 
 .search>div>div{
@@ -155,12 +166,13 @@ footer{
 #place_select{
     display: inline-block;
     height: 2rem;
+    margin: 0 2rem 0 2rem;
 }
 
 #place_select>div{
     display: inline-block;
-    vertical-align: bottom;
-    padding: 0 0 1rem 0;
+    /* vertical-align: bottom;
+    padding: 0 0 1rem 0; */
 }
 
 #place_select>div:nth-child(1){
@@ -207,6 +219,10 @@ footer{
     height: 2rem;
 } */
 
+#search_input>div{
+    display: inline-block;
+}
+
 #search_input>div>input{
     border: 0;
     background: lightgray url('./../img/magnifying_glass.svg') no-repeat left 1rem center;
@@ -218,6 +234,111 @@ footer{
 #search_input>div>input[type=text]{
     padding-left: 3rem;
 }
+
+#search_right_half{
+    display: inline-block;
+    text-align: right;
+    width: 45%;
+}
+
+#search_right_half>div{
+    display: inline-block;
+}
+
+#phone{
+    display: inline-block;
+    vertical-align: baseline;
+    /* background: #00000000 url('./../img/phone.svg') no-repeat left 1rem center; */
+    /* height: 3rem; */
+}
+
+#phone>img{
+    display: inline-block;
+    vertical-align: top;
+    height: 1.25rem;
+    margin-top: -0.2rem;
+}
+
+#phone>p{
+    display: inline-block;
+    vertical-align: baseline;
+    padding-left: 1rem;
+}
+
+#search_right_half>div>label{
+    padding: 0 1rem 0 1rem;
+}
+
+#heart{
+    display: inline-block;
+    vertical-align: top;
+    /* margin: 0 1rem 0 1rem; */
+    max-width: 2rem;
+    max-height: 2rem;
+    text-align: center;
+}
+
+/* #heart>div{
+    position: relative; 
+     display: block;
+} */
+
+#heart>div:nth-child(1)
+{
+    /* position: relative; */
+    z-index: 2;
+}
+
+#heart>div:nth-child(2)
+{
+    /* background-color: green;
+    border-radius: 0.49rem;
+    height: 1rem;
+    width: 1rem;
+    font-size: 0.8rem;
+    vertical-align: baseline;
+    text-align: center; */
+    height: 0.95rem;
+    width: 0.95rem;
+    background-color: rgba(0, 155, 0, 0.99);
+    border-radius: 0.75rem;
+    display: block;
+    margin-left: 1.2rem;
+    margin-top: -2rem;
+    border: 0.1rem solid white;
+    position: relative;
+    z-index: 3;
+}
+
+#heart>div:nth-child(2)>p
+{
+    font-size: 0.7rem;
+    padding-top: 0.2rem;
+    padding-right: 0.08rem;
+    color: white;
+    position: relative;
+    z-index: 4;
+}
+
+#person>div{
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+#person>div:nth-child(1){
+    position: relative;
+    vertical-align: top;
+    margin: -0.1rem 0 0 0;
+}
+
+#person>div:nth-child(3){
+    position: relative;
+    vertical-align: top;
+    margin: -0.2rem 0 0 0;
+}
+
 
 
 /* .search>p:nth-child(1){
@@ -298,35 +419,35 @@ footer{
 } */
 
 
-.sales{
-    /* white-space: nowrap; */
-}
+/* .sales{
+    white-space: nowrap;
+} */
 
-.sale{
+/* .sale{
     display: inline-block;
-}
+} */
 
-.categories{
-    /* white-space: nowrap; */
-}
+/* .categories{
+    white-space: nowrap;
+} */
 
-.categories_card{
+/* .categories_card{
     display: inline-block;
-}
+} */
 
 
-.goods{
-    /* white-space: nowrap; */
-}
+/* .goods{
+    white-space: nowrap;
+} */
 
-.goods_card{
+/* .goods_card{
     display: inline-block;
-}
+} */
 
-.advertising{
-    /* white-space: nowrap; */
-}
+/* .advertising{
+    white-space: nowrap;
+} */
 
-.advertising_card{
+/* .advertising_card{
     display: inline-block;
-}
+} */
