@@ -1,7 +1,44 @@
+@font-face {
+    font-family: "site_font_cerebri_sans_pro";
+
+    /*
+        100 – Thin || Hairline
+        200 – Extra Light || Ultra Light || Thin
+        300 – Light
+        400 – Normal || Regular
+        500 – Medium
+        600 – Semi Bold || Demi Bold
+        700 – Bold
+        800 – Extra Bold || Ultra Bold || Heavy
+        900 – Black || Heavy
+    */
+
+    src: url("./../fonts/Cerebri.Sans.Pro/CerebriSansPro-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "site_font_inter";
+
+    /*
+            100 – Thin || Hairline
+            200 – Extra Light || Ultra Light || Thin
+            300 – Light
+            400 – Normal || Regular
+            500 – Medium
+            600 – Semi Bold || Demi Bold
+            700 – Bold
+            800 – Extra Bold || Ultra Bold || Heavy
+            900 – Black || Heavy
+        */
+
+    src: url("./../fonts/Inter/static/Inter-Black.ttf");
+}
 
 html {
     height: 100%;
     font-size: 1 em;
+    font-family: "site_font_cerebri_sans_pro", 'Ink Free';
+    z-index: 0;
 }
 
 body {
@@ -61,15 +98,15 @@ footer{
     border-radius: 8px;
     margin-right: 0.3rem;
     margin-left: 0.3rem;
-    vertical-align:middle;
+    vertical-align:baseline;
 } */
 
 .account>p>img{
     height: 2rem;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     margin-right: 0.5rem;
     margin-left: 0.5rem;
-    vertical-align:middle;
+    vertical-align:baseline;
 }
 
 .account>p>label{
@@ -77,6 +114,189 @@ footer{
     margin-left: 0rem;
     margin-right: 1rem;
 }
+
+.search{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.search>div>div{
+    display: inline-block;
+    vertical-align:baseline;
+}
+
+#head_logo{
+    display: inline-block;
+    vertical-align:top;
+    padding: 0.5rem 0 0 0;
+}
+
+#head_logo>div{
+    font-weight:800;
+    font-family: site_font_inter, 'Ink Free';
+    display: inline-block;
+}
+
+#head_logo>div>p{
+    display: inline-block;
+    font-size: 1.875rem;
+}
+
+#head_logo>div>img{
+    max-height: 3rem;
+    max-width: 1.8rem;
+    display: inline-block;
+    vertical-align: top;
+    margin: -1rem 0rem 0rem 0rem;
+    padding: 0rem 0 0 0;
+}
+
+#place_select{
+    display: inline-block;
+    height: 2rem;
+}
+
+#place_select>div{
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 0 0 1rem 0;
+}
+
+#place_select>div:nth-child(1){
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+#place_select>div>img:nth-child(1){
+    height: 1rem;
+    margin: 0.55rem 0 0 0;
+    position: relative;
+    z-index: 1;
+    top: 0.3rem;
+}
+
+#place_select>div>img:nth-child(2){
+    height: 0.3rem;
+    position: relative;
+    z-index: 2;
+    left: -0.77rem;
+    top: -0.2rem;
+}
+
+#place_select>div:nth-child(2){
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0.8rem 0 0 0;
+}
+
+#place_select>div>select{
+    border: 0;
+    color: gray;
+    font-size: 1rem;
+    margin: 0.1rem 0 0 0;
+
+    background: #ffffff url('./../img/arrow_down.svg') no-repeat right 0 center;
+    -webkit-appearance: none; /* Стиль для Safari */
+    -moz-appearance: none;    /* Стиль для Firefox */
+    appearance: none;         /* Стиль для прочих браузеров */
+}
+
+/* #search_input{
+    display: inline-block;
+    height: 2rem;
+} */
+
+#search_input>div>input{
+    border: 0;
+    background: lightgray url('./../img/magnifying_glass.svg') no-repeat left 1rem center;
+    border-radius: 0.25rem;
+    height: 2rem;
+    vertical-align: baseline;
+}
+
+#search_input>div>input[type=text]{
+    padding-left: 3rem;
+}
+
+
+/* .search>p:nth-child(1){
+    font-weight:800;
+    font-size: 1.875 rem;
+    font-family: site_font_inter, 'Ink Free';
+} */
+
+/* .search>img{
+    height: 1.2rem;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.search>div
+{
+    display: inline-block;
+    border-left: 0.12rem solid lightgrey;
+    border-right: 0.12rem solid lightgrey;
+    height: 2rem;
+}
+
+.search>div>p:nth-child(n){
+    display: inline-block;
+}
+
+.search>div
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.75rem;
+}
+
+.search>div>div:nth-child(1)
+{
+    z-index: 1;
+    position: relative;
+}
+
+.search>div>div>div>div:nth-child(1)>img
+{
+    position: relative;
+    z-index: 2;
+} */
+
+/* .search>div>div:nth-child(2)
+{
+    height: 0.95rem;
+    width: 0.95rem;
+    background-color: rgba(0, 255, 0, 0.99);
+    border-radius: 0.55rem;
+    display: block;
+    margin-left: 1.2rem;
+    margin-top: -2rem;
+    border: solid white;
+    position: relative;
+    z-index: 3;
+} */
+
+/* .search>div>div:nth-child(2)>p
+{
+    padding-top: 0.15rem;
+    color: white;
+    position: relative;
+    z-index: 4;
+} */
+
+/* .search>div>div:nth-child(2)>p
+{
+    padding-top: 0.15rem;
+    color: white;
+    position: relative;
+    z-index: 4;
+} */
+
 
 .sales{
     /* white-space: nowrap; */
