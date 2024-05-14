@@ -1,3 +1,11 @@
+:root {
+    /* https://angel-rs.github.io/css-color-filter-generator/ */
+    /* https://cssfilterconverter.com/ */
+    --basic-white: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(280deg) brightness(108%) contrast(102%);
+    --basic-green: brightness(0) saturate(100%) invert(32%) sepia(10%) saturate(7304%) hue-rotate(135deg) brightness(100%) contrast(94%);
+    
+  }
+
 @font-face {
     font-family: "site_font_cerebri_sans_pro";
 
@@ -91,6 +99,11 @@ footer{
     color: white;
     text-align: center;
     padding: 1rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /* .soc{
@@ -101,18 +114,24 @@ footer{
     vertical-align:baseline;
 } */
 
-.account>p>img{
+.account>img{
     height: 2rem;
-    /* border-radius: 8px; */
     margin-right: 0.5rem;
     margin-left: 0.5rem;
     vertical-align:baseline;
 }
 
-.account>p>label{
+.account>label{
     font-size: 1rem;
     margin-left: 0rem;
     margin-right: 1rem;
+    vertical-align:baseline;
+}
+
+.account>label:nth-child(1){
+    font-size: 2rem;
+    margin: 0 0 0 0;
+    padding: 0.2rem 0 0 0;
 }
 
 .search{
@@ -238,6 +257,10 @@ footer{
 #search_input>div>input{
     border: 0;
     background: lightgray url('./../img/magnifying_glass.svg') no-repeat left 1rem center;
+    -webkit-appearance: none; /* Стиль для Safari */
+    -moz-appearance: none;    /* Стиль для Firefox */
+    appearance: none;         /* Стиль для прочих браузеров */
+
     border-radius: 0.25rem;
     height: 2rem;
     vertical-align: baseline;
@@ -357,6 +380,7 @@ footer{
     display: flex;
     justify-content:space-between;
     flex-direction: row;
+    align-items: center;
 }
 
 .menu>div>div>div:nth-child(1){
@@ -371,18 +395,58 @@ footer{
     flex-direction: row-reverse;
 }
 
+.menu>div>div>div>div{
+    padding: 1rem 1rem 1rem 1rem;
+    text-transform: uppercase;
+}
+
 .menu>div>div>div:nth-child(1)>div:nth-child(1){
     text-align: left;
-    /* background-color: blue; */
+    text-transform: capitalize;
+
+    background: lightgrey url("./../img/line_list.svg") no-repeat left 1rem center;
+    -webkit-appearance: none; /* Стиль для Safari */
+    -moz-appearance: none;    /* Стиль для Firefox */
+    appearance: none;         /* Стиль для прочих браузеров */
+
+    padding: 1rem 1rem 1rem 2.5rem;
+}
+
+.menu>div>div>div:nth-child(1)>div:nth-child(1):p{
+
+    padding: 0 3rem 0 3rem;
+    vertical-align: middle;
+
 }
 
 .menu>div>div>div:nth-child(1)>div:nth-child(2){
     text-align: left;
+    padding: 1rem 1rem 1rem 3rem;
     /* background-color: springgreen; */
+    color: green;
 }
 
 .menu>div>div>div:last-child>div:last-child{
     align-self: right;
-    /* background-color: green; */
+    background: lightgreen url("./../img/arrow_down.svg fill='#ffffff'" ) no-repeat right 0 center;
+    -webkit-appearance: none; /* Стиль для Safari */
+    -moz-appearance: none;    /* Стиль для Firefox */
+    appearance: none;         /* Стиль для прочих браузеров */
+
+    padding: 0rem 1rem 1rem 2.5rem;
+    color: white;
 }
 
+.menu>div>div>div:last-child>div:last-child background-image{
+    filter: var(--basic-white);
+}
+
+.menu>div>div>div:last-child>div:last-child>img{
+    position: relative;
+    left: -1.75rem;
+    top: 1.25rem;
+}
+
+.menu>div>div>div:last-child>div:last-child>img{
+    filter: var(--basic-white);
+}
