@@ -489,41 +489,47 @@ footer{
     
 }
 
-.sales>div>div>div>div:nth-child(5n+1)>div{
+.sales>div>div>div>div:nth-child(1)>div{
     background-image: url("./../img/1_1.jpg");
     background-size: 14rem 10rem;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.sales>div>div>div>div:nth-child(5n+2)>div{
+.sales>div>div>div>div:nth-child(2)>div{
     background-image: url("./../img/1_2.jpg");
     background-size: 14rem 10rem;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.sales>div>div>div>div:nth-child(5n+3)>div{
+.sales>div>div>div>div:nth-child(3)>div{
     background-image: url("./../img/1_3.jpg");
     background-size: 14rem 10rem;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.sales>div>div>div>div:nth-child(5n+4)>div{
+.sales>div>div>div>div:nth-child(4)>div{
     background-image: url("./../img/1_4.jpg");
     background-size: 14rem 10rem;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.sales>div>div>div>div:nth-child(5n+5)>div{
+.sales>div>div>div>div:nth-child(5)>div{
     background-image: url("./../img/1_5.jpg");
     background-size: 14rem 10rem;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.sales>div>div>div>div:nth-child(6)>div{
+    background-image: url("./../img/1_3.jpg");
+    background-size: 14rem 10rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
 /* .soc{
