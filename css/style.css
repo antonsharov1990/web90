@@ -106,14 +106,6 @@ footer{
     align-items: center;
 }
 
-/* .soc{
-    height: 2rem;
-    border-radius: 8px;
-    margin-right: 0.3rem;
-    margin-left: 0.3rem;
-    vertical-align:baseline;
-} */
-
 .account>img{
     height: 2rem;
     margin-right: 0.5rem;
@@ -202,8 +194,6 @@ footer{
 
 #place_select>div{
     display: flex;
-    /* vertical-align: bottom;
-    padding: 0 0 1rem 0; */
 }
 
 #place_select>div:nth-child(1){
@@ -237,18 +227,12 @@ footer{
     border: 0;
     color: gray;
     font-size: 1rem;
-    /* padding: 0 0 1rem 0; */
 
     background: #ffffff url('./../img/arrow_down.svg') no-repeat right 0 center;
     -webkit-appearance: none; /* Стиль для Safari */
     -moz-appearance: none;    /* Стиль для Firefox */
     appearance: none;         /* Стиль для прочих браузеров */
 }
-
-/* #search_input{
-    display: inline-block;
-    height: 2rem;
-} */
 
 #search_input>div{
     display: flex;
@@ -311,29 +295,10 @@ footer{
     text-align: center;
 }
 
-/* #heart>div{
-    position: relative; 
-     display: block;
-} */
-
 #heart>div:nth-child(1)
 {
     z-index: 2;
 }
-
-/* #heart>div:nth-child(2)
-{
-    height: 0.95rem;
-    width: 0.95rem;
-    background-color: rgba(0, 155, 0, 0.99);
-    border-radius: 0.75rem;
-    display: flex;
-    left: -0.5rem;
-    margin: -0.5rem -0.5rem 0 0rem;
-    border: 0.1rem solid white;
-    position: relative;
-    z-index: 3;
-} */
 
 #heart>div:nth-child(2)>p
 {
@@ -422,7 +387,6 @@ footer{
 .menu>div>div>div:nth-child(1)>div:nth-child(2){
     text-align: left;
     padding: 1rem 1rem 1rem 3rem;
-    /* background-color: springgreen; */
     color: green;
 }
 
@@ -450,3 +414,124 @@ footer{
 .menu>div>div>div:last-child>div:last-child>img{
     filter: var(--basic-white);
 }
+
+/* .sales>div{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.sale{
+    width: 14rem;
+    height: 10rem;
+    margin: 1rem;
+    padding: -0.2rem;
+    border: 0.2rem solid rgba(255, 255, 255, 1);
+    box-shadow: 0 0.1rem 0.1rem gray;
+
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+
+}
+
+
+.sale>div:nth-child(1){
+    background-image: none;
+    background-color: white;
+    width: 10rem;
+    height: 4rem;
+    border: none;
+    /* position: relative; */
+    /* top: 0.9rem; */
+    /* left: 0rem; */
+    /* padding: 0.5rem 0.5rem 0.5rem 0.5rem; */
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.sale>div:nth-child(1)>p:nth-child(1){
+    color: green;
+    text-transform: uppercase;
+    padding: 0.75rem 0.1rem 0.1rem 0.75rem;
+    font-size: 0.8rem;
+}
+
+.sale>div:nth-child(1)>p:nth-child(2){
+    color: black;
+    text-transform: capitalize;
+    padding: 0.1rem 0.1rem 0.1rem 0.75rem;
+    font-size: 0.8rem;
+}
+
+.sale>div:nth-child(1)>p:nth-child(3){
+    color: gray;
+    text-transform: capitalize;
+    padding: 0.1rem 0.1rem 0.1rem 0.75rem;
+    font-size: 0.8rem;
+}
+
+.sale>div:nth-child(2){
+    background-image: none;
+    background-color: green;
+    padding: 1rem 1rem 1rem 1rem;
+
+    color: white;
+
+    width: max-content;
+    /* height: 1rem; */
+
+    /* position: relative;
+    top: 1.5rem;
+    left: 5.75rem; */
+    margin: 0.5rem 0.5rem 0.5rem auto;
+    
+}
+
+.sales>div>div>div>div:nth-child(5n+1)>div{
+    background-image: url("./../img/1_1.jpg");
+    background-size: 14rem 10rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sales>div>div>div>div:nth-child(5n+2)>div{
+    background-image: url("./../img/1_2.jpg");
+    background-size: 14rem 10rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sales>div>div>div>div:nth-child(5n+3)>div{
+    background-image: url("./../img/1_3.jpg");
+    background-size: 14rem 10rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sales>div>div>div>div:nth-child(5n+4)>div{
+    background-image: url("./../img/1_4.jpg");
+    background-size: 14rem 10rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sales>div>div>div>div:nth-child(5)>div{
+    background-image: url("./../img/1_5.jpg");
+    background-size: 14rem 10rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+/* .soc{
+    height: 2rem;
+    border-radius: 8px;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+    vertical-align:baseline;
+} */
+
+

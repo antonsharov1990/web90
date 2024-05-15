@@ -1,0 +1,10 @@
+
+
+.itc-slider-item {
+    --sale_gap: 1rem;
+    /* Три значения: flex-grow | flex-shrink | flex-basis */
+    /* flex: 0 0 auto; */
+    flex: 1 1 16rem;
+    /* flex: 0 0 calc((100% - var(--sale_gap)*5) / 5); */
+}
+
