@@ -517,7 +517,7 @@ footer{
     background-position: center;
 }
 
-.sales>div>div>div>div:nth-child(5)>div{
+.sales>div>div>div>div:nth-child(5n+5)>div{
     background-image: url("./../img/1_5.jpg");
     background-size: 14rem 10rem;
     background-repeat: no-repeat;
