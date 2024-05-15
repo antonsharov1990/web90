@@ -1,4 +1,6 @@
-
+.itc-slider-wrapper{
+    background-color: white;
+}
 
 .itc-slider-item {
     --sale_gap: 1rem;
