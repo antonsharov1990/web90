@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,12 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset200802.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/itc-slider.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/itc-slider-settings.css">
 
-    <script src="/js/itc-slider.js" defer></script>
+    <script src="./js/script.js" defer></script>
 
     <title>Fruits and Vegetables online store</title>
 </head>
+
 <body>
     <header>
         <section class="account">
@@ -30,73 +29,74 @@
         <section class="search">
             <div>
                 <div>
-                <div id="search_left_half">
-                    <div>
-                        <div id="head_logo">
+                    <div id="search_left_half">
+                        <div>
+                            <div id="head_logo">
+                                <div>
+                                    <h1>LOGO</h1>
+                                </div>
+                                <div>
+                                    <img src="img/apple.png" alt="apple">
+                                </div>
+                            </div>
+                            <div id="place_select">
+                                <div>
+                                    <img src="img/inverted_drop.svg" alt="location_point">
+                                    <img src="img/location_dot.svg" alt="location_dot">
+                                </div>
+                                <div>
+                                    <select name="select">
+                                        <option value="value1" selected>Gurugram</option>
+                                        <option value="value2">Gurugram 2</option>
+                                        <option value="value3">Gurugram 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="search_input">
                             <div>
-                                <p>LOGO</p>
+                                <input type="text" placeholder="Search for products..." size="30">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="search_right_half">
+                        <div id="phone">
+                            <img src="img/phone.svg" alt="phone">
+                            <p>1800-000-000</p>
+                        </div>
+                        <div>
+                            <label>|</label>
+                        </div>
+                        <div id="heart">
+                            <div>
+                                <img src="img/heart.svg" alt="heart">
                             </div>
                             <div>
-                                <img src="img/apple.png" alt="apple">
+                                <p>3</p>
                             </div>
                         </div>
-                        <div id="place_select">
+                        <div>
+                            <label>|</label>
+                        </div>
+                        <div id="person">
                             <div>
-                                <img src="img/inverted_drop.svg" alt="location_point">
-                                <img src="img/location_dot.svg" alt="location_dot">
+                                <img src="./img/person.svg" alt="person">
                             </div>
                             <div>
-                                <select name="select">
-                                    <option value="value1" selected>Gurugram</option>
-                                    <option value="value2">Gurugram 2</option>
-                                    <option value="value3">Gurugram 3</option>
-                                </select>
+                                <p>John Doe</p>
+                            </div>
+                            <div>
+                                <img src="./img/arrow_down.svg" alt="arrow_down">
                             </div>
                         </div>
                     </div>
-            
-                    <div id="search_input">
-                        <div>
-                            <input type="text" placeholder="Search for products..." size="30">
-                        </div>
-                    </div>
-                </div>
-                <div id="search_right_half">
-                    <div id="phone">
-                        <img src="img/phone.svg" alt="phone">
-                        <p>1800-000-000</p>
-                    </div>
-                    <div>
-                        <label>|</label>
-                    </div>
-                    <div id="heart">
-                        <div>
-                            <img src="img/heart.svg" alt="heart">
-                        </div>
-                        <div>
-                            <p>3</p>
-                        </div>
-                    </div>
-                    <div>
-                        <label>|</label>
-                    </div>
-                    <div id="person">
-                        <div>
-                            <img src="img/person.svg" alt="person">
-                        </div>
-                        <div>
-                            <p>John Doe</p>
-                        </div>
-                        <div>
-                            <img src="img/arrow_down.svg" alt="arrow_down">
-                        </div>
-                    </div>
-                </div>
                 </div>
             </div>
             <hr>
         </section>
         <section class="menu">
+            <h2></h2>
             <div>
                 <div>
                     <div>
@@ -127,86 +127,92 @@
             <hr>
         </section>
         <section class="sales">
-            <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="60000">
-                <div class="itc-slider-wrapper">
-                    <div class="itc-slider-items">
-                        <div class="itc-slider-item">
-                            <div class="sale">
-                                <div>
-                                    <p>6% OFF</p>
-                                    <p>Buy More & Save More</p>
-                                    <p>Beverage</p>
-                                </div>
-                                <div>
-                                    <p>SHOP NOW</p>
-                                </div>
+            <h2></h2>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <div class="sale">
+                            <div>
+                                <p>6% OFF</p>
+                                <p>Buy More & Save More</p>
+                                <p>Beverage</p>
+                            </div>
+                            <div class="shop_now">
+                                <p>SHOP NOW</p>
                             </div>
                         </div>
-                        <div class="itc-slider-item">
-                            <div class="sale">
-                                <div>
-                                    <p>10% OFF</p>
-                                    <p>Buy More & Save More</p>
-                                    <p>Nuts & Snacks</p>
-                                </div>
-                                <div>
-                                    <p>SHOP NOW</p>
-                                </div>
+                    </div>
+                    <div class="slide">
+                        <div class="sale">
+                            <div>
+                                <p>10% OFF</p>
+                                <p>Buy More & Save More</p>
+                                <p>Nuts & Snacks</p>
+                            </div>
+                            <div class="shop_now">
+                                <p>SHOP NOW</p>
                             </div>
                         </div>
-                        <div class="itc-slider-item">
-                            <div class="sale">
-                                <div>
-                                    <p>6% OFF</p>
-                                    <p>Buy More & Save More</p>
-                                    <p>Fresh Vegetables</p>
-                                </div>
-                                <div>
-                                    <p>SHOP NOW</p>
-                                </div>
+                    </div>
+                    <div class="slide">
+                        <div class="sale">
+                            <div>
+                                <p>6% OFF</p>
+                                <p>Buy More & Save More</p>
+                                <p>Fresh Vegetables</p>
+                            </div>
+                            <div class="shop_now">
+                                <p>SHOP NOW</p>
                             </div>
                         </div>
-                        <div class="itc-slider-item">
-                            <div class="sale">
-                                <div>
-                                    <p>25% OFF</p>
-                                    <p>Buy More & Save More</p>
-                                    <p>Fresh Fruits</p>
-                                </div>
-                                <div>
-                                    <p>SHOP NOW</p>
-                                </div>
+                    </div>
+                    <div class="slide">
+                        <div class="sale">
+                            <div>
+                                <p>25% OFF</p>
+                                <p>Buy More & Save More</p>
+                                <p>Fresh Fruits</p>
+                            </div>
+                            <div class="shop_now">
+                                <p>SHOP NOW</p>
                             </div>
                         </div>
-                        <div class="itc-slider-item">
-                            <div class="sale">
-                                <div>
-                                    <p>15% OFF</p>
-                                    <p>Buy More & Save More</p>
-                                    <p>Eggs & Dairy</p>
-                                </div>
-                                <div>
-                                    <p>SHOP NOW</p>
-                                </div>
+                    </div>
+                    <div class="slide">
+                        <div class="sale">
+                            <div>
+                                <p>15% OFF</p>
+                                <p>Buy More & Save More</p>
+                                <p>Eggs & Dairy</p>
                             </div>
-                        </div>
-                    
-                        <div class="itc-slider-item">
-                            <div class="sale">
-                                <div>
-                                    <p>6% OFF</p>
-                                    <p>Buy More & Save More</p>
-                                    <p>Fresh Vegetables</p>
-                                </div>
-                                <div>
-                                    <p>SHOP NOW</p>
-                                </div>
+                            <div class="shop_now">
+                                <p>SHOP NOW</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="slider_counter">
+                    0
+                </div>
             </div>
         </section>
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link back_to_main">Back to Main</a>
+                </li>
+            </ul>
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Catalog</a>
+                </li>
+            </ul>
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Contacts</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="categories">
@@ -214,53 +220,52 @@
                 <div>
                     <div>
                         <p>Shop By</p>
-                        <p>Categories</p>
+                        <h2>Categories</h2>
                     </div>
-            
-                    <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="false">
-                        <div class="itc-slider-wrapper">
-                            <div class="itc-slider-items">
-                                <div class="itc-slider-item">
-                                    <div class="categories_card">
-                                        <p>Vegetables & Fruits</p>
-                                    </div>
+
+                    <div class="slider">
+                        <div class="slides-mid">
+                            <div class="slide">
+                                <div class="categories_card">
+                                    <p>Vegetables & Fruits</p>
                                 </div>
-                                <div class="itc-slider-item">
-                                    <div class="categories_card">
-                                        <p>Grocery & Staples</p>
-                                    </div>
+                            </div>
+                            <div class="slide">
+                                <div class="categories_card">
+                                    <p>Grocery & Staples</p>
                                 </div>
-                                <div class="itc-slider-item">
-                                    <div class="categories_card">
-                                        <p>Dairy & Eggs</p>
-                                    </div>
+                            </div>
+                            <div class="slide">
+                                <div class="categories_card">
+                                    <p>Dairy & Eggs</p>
                                 </div>
-                                <div class="itc-slider-item">
-                                    <div class="categories_card">
-                                        <p>Beverages</p>
-                                    </div>
+                            </div>
+                            <div class="slide">
+                                <div class="categories_card">
+                                    <p>Beverages</p>
                                 </div>
-                                <div class="itc-slider-item">
-                                    <div class="categories_card">
-                                        <p>Snacks</p>
-                                    </div>
+                            </div>
+                            <div class="slide">
+                                <div class="categories_card">
+                                    <p>Snacks</p>
                                 </div>
-            
-                                <div class="itc-slider-item">
-                                    <div class="categories_card">
-                                        <p>Home Care</p>
-                                    </div>
-                                </div>
-            
-                                <div class="itc-slider-item">
-                                    <div class="categories_card">
-                                        <p>Trevel goods</p>
-                                    </div>
+                            </div>
+                    
+                            <div class="slide">
+                                <div class="categories_card">
+                                    <p>Home Care</p>
                                 </div>
                             </div>
                         </div>
-                        <button class="itc-slider-btn itc-slider-btn-prev"></button>
-                        <button class="itc-slider-btn itc-slider-btn-next"></button>
+                        <div class="slider_counter">
+                            0
+                        </div>
+                        <button class="slider-button-prev"><svg width="6" height="8" viewBox="0 0 6 8" fill="none">
+                            <path d="M1.68024 0L0.740234 0.94L3.79357 4L0.740234 7.06L1.68024 8L5.68024 4L1.68024 0Z" fill="black"/>
+                        </svg></button>
+                        <button class="slider-button-next"><svg width="6" height="8" viewBox="0 0 6 8" fill="none">
+                            <path d="M1.68024 0L0.740234 0.94L3.79357 4L0.740234 7.06L1.68024 8L5.68024 4L1.68024 0Z" fill="black"/>
+                        </svg></button>
                     </div>
                 </div>
             </div>
@@ -270,60 +275,185 @@
                 <div>
                     <div>
                         <p>For You</p>
-                        <p>Top Featured Products</p>
+                        <h2>Top Featured Products</h2>
                     </div>
-                    <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="false">
-                        <div class="itc-slider-wrapper">
-                            <div class="itc-slider-items">
-                                <div class="itc-slider-item">
+                    <div class="slider">
+
+                            <div class="slides-mid top_featured_products">
+                                <div class="slide">
                                     <div class="goods_card">
-                                        <p>15%Off</p>
-                                        <p>Available(in stock)</p>
-                                        <p>Fresh organic apricot</p>
-                                        <p>$12 $15</p>
-                                        <p>1</p>
+                                        <p class="good_sale">15%Off</p>
+                                        <div class="goods_card_heart">
+                                            <svg width="1.25rem" height="2rem">
+                                                <path
+                                                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                                                    fill="#2A2A2A" />
+                                            </svg>
+                                        </div>
+                                        <div class="good_center">
+                                            <p class="good_available">Available(in stock)</p>
+                                            <p class="good_name">Fresh organic apricot</p>
+                                            <div class="good_price">
+                                                <p>$12</p>
+                                                <p>$15</p>
+                                            </div>
+                                        </div>
+                                        <div class="good_action">
+                                            <div>
+                                                <p class="good_put_away">-</p>
+                                                <p>1</p>
+                                                <p class="good_add">+</p>
+                                            </div>
+                                        </div>
+                                        <svg class="goods_card_basket" width="1.25rem" height="1.25rem">
+                                            <path
+                                                d="M14.55 11C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C20.25 2.82 19.77 2 19.01 2H4.21L3.27 0H0V2H2L5.6 9.59L4.25 12.03C3.52 13.37 4.48 15 6 15H18V13H6L7.1 11H14.55ZM5.16 4H17.31L14.55 9H7.53L5.16 4ZM6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
                                     </div>
                                 </div>
-                                <div class="itc-slider-item">
+                                <div class="slide">
                                     <div class="goods_card">
-                                        <p>15%Off</p>
-                                        <p>Available(in stock)</p>
-                                        <p>Cucumber</p>
-                                        <p>$12 $15</p>
-                                        <p>1</p>
+                                        <p class="good_sale">15%Off</p>
+                                        <div class="goods_card_heart">
+                                            <svg width="1.25rem" height="2rem">
+                                                <path
+                                                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                                                    fill="#2A2A2A" />
+                                            </svg>
+                                        </div>
+                                        <div class="good_center">
+                                            <p class="good_available">Available(in stock)</p>
+                                            <p class="good_name">Cucumber</p>
+                                            <div class="good_price">
+                                                <p>$12</p>
+                                                <p>$15</p>
+                                            </div>
+                                        </div>
+                                        <div class="good_action">
+                                            <div>
+                                                <p class="good_put_away">-</p>
+                                                <p>1</p>
+                                                <p class="good_add">+</p>
+                                            </div>
+                                        </div>
+                                        <svg class="goods_card_basket" width="1.25rem" height="1.25rem">
+                                            <path
+                                                d="M14.55 11C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C20.25 2.82 19.77 2 19.01 2H4.21L3.27 0H0V2H2L5.6 9.59L4.25 12.03C3.52 13.37 4.48 15 6 15H18V13H6L7.1 11H14.55ZM5.16 4H17.31L14.55 9H7.53L5.16 4ZM6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
                                     </div>
                                 </div>
-                                <div class="itc-slider-item">
+                                <div class="slide">
                                     <div class="goods_card">
-                                        <p>15%Off</p>
-                                        <p>Available(in stock)</p>
-                                        <p>Hazelnuts filbert nut</p>
-                                        <p>$12 $15</p>
-                                        <p>1</p>
+                                        <p class="good_sale">15%Off</p>
+                                        <div class="goods_card_heart">
+                                            <svg width="1.25rem" height="2rem">
+                                                <path
+                                                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                                                    fill="#2A2A2A" />
+                                            </svg>
+                                        </div>
+                                        <div class="good_center">
+                                            <p class="good_available">Available(in stock)</p>
+                                            <p class="good_name">Hazelnuts filbert nut</p>
+                                            <div class="good_price">
+                                                <p>$12</p>
+                                                <p>$15</p>
+                                            </div>
+                                        </div>
+                                        <div class="good_action">
+                                            <div>
+                                                <p class="good_put_away">-</p>
+                                                <p>1</p>
+                                                <p class="good_add">+</p>
+                                            </div>
+                                        </div>
+                                        <svg class="goods_card_basket" width="1.25rem" height="1.25rem">
+                                            <path
+                                                d="M14.55 11C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C20.25 2.82 19.77 2 19.01 2H4.21L3.27 0H0V2H2L5.6 9.59L4.25 12.03C3.52 13.37 4.48 15 6 15H18V13H6L7.1 11H14.55ZM5.16 4H17.31L14.55 9H7.53L5.16 4ZM6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
                                     </div>
                                 </div>
-                                <div class="itc-slider-item">
+                                <div class="slide">
                                     <div class="goods_card">
-                                        <p>15%Off</p>
-                                        <p>Available(in stock)</p>
-                                        <p>Raw Broccoli</p>
-                                        <p>$12 $15</p>
-                                        <p>1</p>
+                                        <p class="good_sale">15%Off</p>
+                                        <div class="goods_card_heart">
+                                            <svg width="1.25rem" height="2rem">
+                                                <path
+                                                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                                                    fill="#2A2A2A" />
+                                            </svg>
+                                        </div>
+                                        <div class="good_center">
+                                            <p class="good_available">Available(in stock)</p>
+                                            <p class="good_name">Raw Broccoli</p>
+                                            <div class="good_price">
+                                                <p>$12</p>
+                                                <p>$15</p>
+                                            </div>
+                                        </div>
+                                        <div class="good_action">
+                                            <div>
+                                                <p class="good_put_away">-</p>
+                                                <p>1</p>
+                                                <p class="good_add">+</p>
+                                            </div>
+                                        </div>
+                                        <svg class="goods_card_basket" width="1.25rem" height="1.25rem">
+                                            <path
+                                                d="M14.55 11C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C20.25 2.82 19.77 2 19.01 2H4.21L3.27 0H0V2H2L5.6 9.59L4.25 12.03C3.52 13.37 4.48 15 6 15H18V13H6L7.1 11H14.55ZM5.16 4H17.31L14.55 9H7.53L5.16 4ZM6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
                                     </div>
                                 </div>
-                                <div class="itc-slider-item">
+                                <div class="slide">
                                     <div class="goods_card">
-                                        <p>15%Off</p>
-                                        <p>Available(in stock)</p>
-                                        <p>Organic quince</p>
-                                        <p>$12 $15</p>
-                                        <p>1</p>
+                                        <p class="good_sale">15%Off</p>
+                                        <div class="goods_card_heart">
+                                            <svg width="1.25rem" height="2rem">
+                                                <path
+                                                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                                                    fill="#2A2A2A" />
+                                            </svg>
+                                        </div>
+                                        <div class="good_center">
+                                            <p class="good_available">Available(in stock)</p>
+                                            <p class="good_name">Organic quince</p>
+                                            <div class="good_price">
+                                                <p>$12</p>
+                                                <p>$15</p>
+                                            </div>
+                                        </div>
+                                        <div class="good_action">
+                                            <div>
+                                                <p class="good_put_away">-</p>
+                                                <p>1</p>
+                                                <p class="good_add">+</p>
+                                            </div>
+                                        </div>
+                                        <svg class="goods_card_basket" width="1.25rem" height="1.25rem">
+                                            <path
+                                                d="M14.55 11C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C20.25 2.82 19.77 2 19.01 2H4.21L3.27 0H0V2H2L5.6 9.59L4.25 12.03C3.52 13.37 4.48 15 6 15H18V13H6L7.1 11H14.55ZM5.16 4H17.31L14.55 9H7.53L5.16 4ZM6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <button class="itc-slider-btn itc-slider-btn-prev"></button>
-                        <button class="itc-slider-btn itc-slider-btn-next"></button>
+                            <div class="slider_counter">
+                                0
+                            </div>
+                            <button class="slider-button-prev">
+                                <svg width="6" height="8" viewBox="0 0 6 8" fill="none">
+                                    <path d="M1.68024 0L0.740234 0.94L3.79357 4L0.740234 7.06L1.68024 8L5.68024 4L1.68024 0Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <button class="slider-button-next">
+                                <svg width="6" height="8" viewBox="0 0 6 8" fill="none">
+                                    <path d="M1.68024 0L0.740234 0.94L3.79357 4L0.740234 7.06L1.68024 8L5.68024 4L1.68024 0Z" fill="black"/>
+                                </svg>
+                            </button>
                     </div>
                 </div>
             </div>
@@ -333,24 +463,48 @@
                 <div>
                     <div>
                         <p>Offers</p>
-                        <p>Best Values</p>
+                        <h2>Best Values</h2>
                     </div>
-                    <div>
+                    <div class="advertising_best_values_box">
                         <div>
-                            <div class="advertising_card">
-                                <p>Daily Essentials</p>
-                                <p>20% Off Everyday</p>
-                                <p>Shop Now</p>
+                            <div class="advertising_card advertising_card_1">
+                                <div>
+                                    <div>
+                                        <p>Daily Essentials</p>
+                                    </div>
+                                    <div>
+                                        <p>20% Off Everyday</p>
+                                    </div>
+                                    <div class="shop_now">
+                                        <p>Shop Now</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="advertising_card">
-                                <p>Get Up To</p>
-                                <p>30% Off</p>
-                                <p>Shop Now</p>
+                            <div class="advertising_card advertising_card_2">
+                                <div>
+                                    <div>
+                                        <p>Get Up To</p>
+                                    </div>
+                                    <div>
+                                        <p>30% Off</p>
+                                    </div>
+                                    <div class="shop_now">
+                                        <p>Shop Now</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="advertising_card">
-                                <p>Special Discount</p>
-                                <p>For All Items</p>
-                                <p>Shop Now</p>
+                            <div class="advertising_card advertising_card_3">
+                                <div>
+                                    <div>
+                                        <p>Special Discount</p>
+                                    </div>
+                                    <div>
+                                        <p>For All Items</p>
+                                    </div>
+                                    <div class="shop_now">
+                                        <p>Shop Now</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div>
@@ -359,7 +513,190 @@
                                 <p>Use Code: Combosuperr2a</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="goods">
+            <div>
+                <div>
+                    <div>
+                        <p>For You</p>
+                        <h2>Top Vegetables & Fruits Products</h2>
+                    </div>
+                    <div class="slider">
 
+                            <div class="slides-mid top_vegetables_and_fruits_products">
+                                <div class="slide">
+                                    <div class="goods_card">
+                                        <p class="good_sale">15%Off</p>
+                                        <div class="goods_card_heart">
+                                            <svg width="1.25rem" height="2rem">
+                                                <path
+                                                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                                                    fill="#2A2A2A" />
+                                            </svg>
+                                        </div>
+                                        <div class="good_center">
+                                            <p class="good_available">Available(in stock)</p>
+                                            <p class="good_name">Red Apple</p>
+                                            <div class="good_price">
+                                                <p>$12</p>
+                                                <p>$15</p>
+                                            </div>
+                                        </div>
+                                        <div class="good_action">
+                                            <div>
+                                                <p class="good_put_away">-</p>
+                                                <p>1</p>
+                                                <p class="good_add">+</p>
+                                            </div>
+                                        </div>
+                                        <svg class="goods_card_basket" width="1.25rem" height="1.25rem">
+                                            <path
+                                                d="M14.55 11C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C20.25 2.82 19.77 2 19.01 2H4.21L3.27 0H0V2H2L5.6 9.59L4.25 12.03C3.52 13.37 4.48 15 6 15H18V13H6L7.1 11H14.55ZM5.16 4H17.31L14.55 9H7.53L5.16 4ZM6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="goods_card">
+                                        <p class="good_sale">15%Off</p>
+                                        <div class="goods_card_heart">
+                                            <svg width="1.25rem" height="2rem">
+                                                <path
+                                                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                                                    fill="#2A2A2A" />
+                                            </svg>
+                                        </div>
+                                        <div class="good_center">
+                                            <p class="good_available">Available(in stock)</p>
+                                            <p class="good_name">capsicum-green</p>
+                                            <div class="good_price">
+                                                <p>$12</p>
+                                                <p>$15</p>
+                                            </div>
+                                        </div>
+                                        <div class="good_action">
+                                            <div>
+                                                <p class="good_put_away">-</p>
+                                                <p>1</p>
+                                                <p class="good_add">+</p>
+                                            </div>
+                                        </div>
+                                        <svg class="goods_card_basket" width="1.25rem" height="1.25rem">
+                                            <path
+                                                d="M14.55 11C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C20.25 2.82 19.77 2 19.01 2H4.21L3.27 0H0V2H2L5.6 9.59L4.25 12.03C3.52 13.37 4.48 15 6 15H18V13H6L7.1 11H14.55ZM5.16 4H17.31L14.55 9H7.53L5.16 4ZM6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="goods_card">
+                                        <p class="good_sale">15%Off</p>
+                                        <div class="goods_card_heart">
+                                            <svg width="1.25rem" height="2rem">
+                                                <path
+                                                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                                                    fill="#2A2A2A" />
+                                            </svg>
+                                        </div>
+                                        <div class="good_center">
+                                            <p class="good_available">Available(in stock)</p>
+                                            <p class="good_name">Pear fruit</p>
+                                            <div class="good_price">
+                                                <p>$12</p>
+                                                <p>$15</p>
+                                            </div>
+                                        </div>
+                                        <div class="good_action">
+                                            <div>
+                                                <p class="good_put_away">-</p>
+                                                <p>1</p>
+                                                <p class="good_add">+</p>
+                                            </div>
+                                        </div>
+                                        <svg class="goods_card_basket" width="1.25rem" height="1.25rem">
+                                            <path
+                                                d="M14.55 11C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C20.25 2.82 19.77 2 19.01 2H4.21L3.27 0H0V2H2L5.6 9.59L4.25 12.03C3.52 13.37 4.48 15 6 15H18V13H6L7.1 11H14.55ZM5.16 4H17.31L14.55 9H7.53L5.16 4ZM6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="goods_card">
+                                        <p class="good_sale">15%Off</p>
+                                        <div class="goods_card_heart">
+                                            <svg width="1.25rem" height="2rem">
+                                                <path
+                                                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                                                    fill="#2A2A2A" />
+                                            </svg>
+                                        </div>
+                                        <div class="good_center">
+                                            <p class="good_available">Available(in stock)</p>
+                                            <p class="good_name">Blueberry</p>
+                                            <div class="good_price">
+                                                <p>$12</p>
+                                                <p>$15</p>
+                                            </div>
+                                        </div>
+                                        <div class="good_action">
+                                            <div>
+                                                <p class="good_put_away">-</p>
+                                                <p>1</p>
+                                                <p class="good_add">+</p>
+                                            </div>
+                                        </div>
+                                        <svg class="goods_card_basket" width="1.25rem" height="1.25rem">
+                                            <path
+                                                d="M14.55 11C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C20.25 2.82 19.77 2 19.01 2H4.21L3.27 0H0V2H2L5.6 9.59L4.25 12.03C3.52 13.37 4.48 15 6 15H18V13H6L7.1 11H14.55ZM5.16 4H17.31L14.55 9H7.53L5.16 4ZM6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="goods_card">
+                                        <p class="good_sale">15%Off</p>
+                                        <div class="goods_card_heart">
+                                            <svg width="1.25rem" height="2rem">
+                                                <path
+                                                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                                                    fill="#2A2A2A" />
+                                            </svg>
+                                        </div>
+                                        <div class="good_center">
+                                            <p class="good_available">Available(in stock)</p>
+                                            <p class="good_name">Fresh raspberry</p>
+                                            <div class="good_price">
+                                                <p>$12</p>
+                                                <p>$15</p>
+                                            </div>
+                                        </div>
+                                        <div class="good_action">
+                                            <div>
+                                                <p class="good_put_away">-</p>
+                                                <p>1</p>
+                                                <p class="good_add">+</p>
+                                            </div>
+                                        </div>
+                                        <svg class="goods_card_basket" width="1.25rem" height="1.25rem">
+                                            <path
+                                                d="M14.55 11C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C20.25 2.82 19.77 2 19.01 2H4.21L3.27 0H0V2H2L5.6 9.59L4.25 12.03C3.52 13.37 4.48 15 6 15H18V13H6L7.1 11H14.55ZM5.16 4H17.31L14.55 9H7.53L5.16 4ZM6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider_counter">
+                                0
+                            </div>
+                            <button class="slider-button-prev"><svg width="6" height="8" viewBox="0 0 6 8" fill="none">
+                                <path d="M1.68024 0L0.740234 0.94L3.79357 4L0.740234 7.06L1.68024 8L5.68024 4L1.68024 0Z" fill="black"/>
+                            </svg></button>
+                            <button class="slider-button-next"><svg width="6" height="8" viewBox="0 0 6 8" fill="none">
+                                <path d="M1.68024 0L0.740234 0.94L3.79357 4L0.740234 7.06L1.68024 8L5.68024 4L1.68024 0Z" fill="black"/>
+                            </svg></button>
                     </div>
                 </div>
             </div>
@@ -368,162 +705,261 @@
             <div>
                 <div>
                     <div>
-            <p>For You</p>
-            <p>Top Vegetables & Fruits Products</p>
+                        <p>For You</p>
+                        <h2>Added New Products</h2>
                     </div>
-                    <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="false">
-                        <div class="itc-slider-wrapper">
-                            <div class="itc-slider-items">
-                                <div class="itc-slider-item">
+                    <div class="slider">
+                            <div class="slides-mid added_new_products">
+                                <div class="slide">
                                     <div class="goods_card">
-                                        <p>15%Off</p>
-                                        <p>Available(in stock)</p>
-                                        <p>Red Apple</p>
-                                        <p>$12 $15</p>
-                                        <p>1</p>
+                                        <p class="good_sale">15%Off</p>
+                                        <div class="goods_card_heart">
+                                            <svg width="1.25rem" height="2rem">
+                                                <path
+                                                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                                                    fill="#2A2A2A" />
+                                            </svg>
+                                        </div>
+                                        <div class="good_center">
+                                            <p class="good_available">Available(in stock)</p>
+                                            <p class="good_name">Ginger</p>
+                                            <div class="good_price">
+                                                <p>$12</p>
+                                                <p>$15</p>
+                                            </div>
+                                        </div>
+                                        <div class="good_action">
+                                            <div>
+                                                <p class="good_put_away">-</p>
+                                                <p>1</p>
+                                                <p class="good_add">+</p>
+                                            </div>
+                                        </div>
+                                        <svg class="goods_card_basket" width="1.25rem" height="1.25rem">
+                                            <path
+                                                d="M14.55 11C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C20.25 2.82 19.77 2 19.01 2H4.21L3.27 0H0V2H2L5.6 9.59L4.25 12.03C3.52 13.37 4.48 15 6 15H18V13H6L7.1 11H14.55ZM5.16 4H17.31L14.55 9H7.53L5.16 4ZM6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
                                     </div>
                                 </div>
-                                <div class="itc-slider-item">
+                                <div class="slide">
                                     <div class="goods_card">
-                                        <p>15%Off</p>
-                                        <p>Available(in stock)</p>
-                                        <p>capsicum-green</p>
-                                        <p>$12 $15</p>
-                                        <p>1</p>
+                                        <p class="good_sale">15%Off</p>
+                                        <div class="goods_card_heart">
+                                            <svg width="1.25rem" height="2rem">
+                                                <path
+                                                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                                                    fill="#2A2A2A" />
+                                            </svg>
+                                        </div>
+                                        <div class="good_center">
+                                            <p class="good_available">Available(in stock)</p>
+                                            <p class="good_name">Two fresh figs</p>
+                                            <div class="good_price">
+                                                <p>$12</p>
+                                                <p>$15</p>
+                                            </div>
+                                        </div>
+                                        <div class="good_action">
+                                            <div>
+                                                <p class="good_put_away">-</p>
+                                                <p>1</p>
+                                                <p class="good_add">+</p>
+                                            </div>
+                                        </div>
+                                        <svg class="goods_card_basket" width="1.25rem" height="1.25rem">
+                                            <path
+                                                d="M14.55 11C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C20.25 2.82 19.77 2 19.01 2H4.21L3.27 0H0V2H2L5.6 9.59L4.25 12.03C3.52 13.37 4.48 15 6 15H18V13H6L7.1 11H14.55ZM5.16 4H17.31L14.55 9H7.53L5.16 4ZM6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
                                     </div>
                                 </div>
-                                <div class="itc-slider-item">
+                                <div class="slide">
                                     <div class="goods_card">
-                                        <p>15%Off</p>
-                                        <p>Available(in stock)</p>
-                                        <p>Pear fruit</p>
-                                        <p>$12 $15</p>
-                                        <p>1</p>
+                                        <p class="good_sale">15%Off</p>
+                                        <div class="goods_card_heart">
+                                            <svg width="1.25rem" height="2rem">
+                                                <path
+                                                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                                                    fill="#2A2A2A" />
+                                            </svg>
+                                        </div>
+                                        <div class="good_center">
+                                            <p class="good_available">Available(in stock)</p>
+                                            <p class="good_name">Strawberry</p>
+                                            <div class="good_price">
+                                                <p>$12</p>
+                                                <p>$15</p>
+                                            </div>
+                                        </div>
+                                        <div class="good_action">
+                                            <div>
+                                                <p class="good_put_away">-</p>
+                                                <p>1</p>
+                                                <p class="good_add">+</p>
+                                            </div>
+                                        </div>
+                                        <svg class="goods_card_basket" width="1.25rem" height="1.25rem">
+                                            <path
+                                                d="M14.55 11C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C20.25 2.82 19.77 2 19.01 2H4.21L3.27 0H0V2H2L5.6 9.59L4.25 12.03C3.52 13.37 4.48 15 6 15H18V13H6L7.1 11H14.55ZM5.16 4H17.31L14.55 9H7.53L5.16 4ZM6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
                                     </div>
                                 </div>
-                                <div class="itc-slider-item">
+                                <div class="slide">
                                     <div class="goods_card">
-                                        <p>15%Off</p>
-                                        <p>Available(in stock)</p>
-                                        <p>Blueberry</p>
-                                        <p>$12 $15</p>
-                                        <p>1</p>
+                                        <p class="good_sale">15%Off</p>
+                                        <div class="goods_card_heart">
+                                            <svg width="1.25rem" height="2rem">
+                                                <path
+                                                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                                                    fill="#2A2A2A" />
+                                            </svg>
+                                        </div>
+                                        <div class="good_center">
+                                            <p class="good_available">Available(in stock)</p>
+                                            <p class="good_name">Eggplant</p>
+                                            <div class="good_price">
+                                                <p>$12</p>
+                                                <p>$15</p>
+                                            </div>
+                                        </div>
+                                        <div class="good_action">
+                                            <div>
+                                                <p class="good_put_away">-</p>
+                                                <p>1</p>
+                                                <p class="good_add">+</p>
+                                            </div>
+                                        </div>
+                                        <svg class="goods_card_basket" width="1.25rem" height="1.25rem">
+                                            <path
+                                                d="M14.55 11C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C20.25 2.82 19.77 2 19.01 2H4.21L3.27 0H0V2H2L5.6 9.59L4.25 12.03C3.52 13.37 4.48 15 6 15H18V13H6L7.1 11H14.55ZM5.16 4H17.31L14.55 9H7.53L5.16 4ZM6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
                                     </div>
                                 </div>
-                                <div class="itc-slider-item">
+                                <div class="slide">
                                     <div class="goods_card">
-                                        <p>15%Off</p>
-                                        <p>Available(in stock)</p>
-                                        <p>Fresh raspberry</p>
-                                        <p>$12 $15</p>
-                                        <p>1</p>
+                                        <p class="good_sale">15%Off</p>
+                                        <div class="goods_card_heart">
+                                            <svg width="1.25rem" height="2rem">
+                                                <path
+                                                    d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z"
+                                                    fill="#2A2A2A" />
+                                            </svg>
+                                        </div>
+                                        <div class="good_center">
+                                            <p class="good_available">Available(in stock)</p>
+                                            <p class="good_name">Egg</p>
+                                            <div class="good_price">
+                                                <p>$12</p>
+                                                <p>$15</p>
+                                            </div>
+                                        </div>
+                                        <div class="good_action">
+                                            <div>
+                                                <p class="good_put_away">-</p>
+                                                <p>1</p>
+                                                <p class="good_add">+</p>
+                                            </div>
+                                        </div>
+                                        <svg class="goods_card_basket" width="1.25rem" height="1.25rem">
+                                            <path
+                                                d="M14.55 11C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C20.25 2.82 19.77 2 19.01 2H4.21L3.27 0H0V2H2L5.6 9.59L4.25 12.03C3.52 13.37 4.48 15 6 15H18V13H6L7.1 11H14.55ZM5.16 4H17.31L14.55 9H7.53L5.16 4ZM6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <button class="itc-slider-btn itc-slider-btn-prev"></button>
-                        <button class="itc-slider-btn itc-slider-btn-next"></button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="goods">
-            <div>
-                <div>
-                    <div>
-            <p>For You</p>
-            <p>Added New Products</p>
-                    </div>
-                    <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="false">
-                        <div class="itc-slider-wrapper">
-                            <div class="itc-slider-items">
-                                <div class="itc-slider-item">
-                                    <div class="goods_card">
-                                        <p>15%Off</p>
-                                        <p>Available(in stock)</p>
-                                        <p>Ginger</p>
-                                        <p>$12 $15</p>
-                                        <p>1</p>
-                                    </div>
-                                </div>
-                                <div class="itc-slider-item">
-                                    <div class="goods_card">
-                                        <p>15%Off</p>
-                                        <p>Available(in stock)</p>
-                                        <p>Two fresh figs</p>
-                                        <p>$12 $15</p>
-                                        <p>1</p>
-                                    </div>
-                                </div>
-                                <div class="itc-slider-item">
-                                    <div class="goods_card">
-                                        <p>15%Off</p>
-                                        <p>Available(in stock)</p>
-                                        <p>Strawberry</p>
-                                        <p>$12 $15</p>
-                                        <p>1</p>
-                                    </div>
-                                </div>
-                                <div class="itc-slider-item">
-                                    <div class="goods_card">
-                                        <p>15%Off</p>
-                                        <p>Available(in stock)</p>
-                                        <p>Eggplant</p>
-                                        <p>$12 $15</p>
-                                        <p>1</p>
-                                    </div>
-                                </div>
-                                <div class="itc-slider-item">
-                                    <div class="goods_card">
-                                        <p>15%Off</p>
-                                        <p>Available(in stock)</p>
-                                        <p>Egg</p>
-                                        <p>$12 $15</p>
-                                        <p>1</p>
-                                    </div>
-                                </div>
+                            <div class="slider_counter">
+                                0
                             </div>
-                        </div>
-                        <button class="itc-slider-btn itc-slider-btn-prev"></button>
-                        <button class="itc-slider-btn itc-slider-btn-next"></button>
+                        
+                        <button class="slider-button-prev"><svg width="6" height="8" viewBox="0 0 6 8" fill="none">
+                            <path d="M1.68024 0L0.740234 0.94L3.79357 4L0.740234 7.06L1.68024 8L5.68024 4L1.68024 0Z" fill="black"/>
+                        </svg></button>
+                        <button class="slider-button-next"><svg width="6" height="8" viewBox="0 0 6 8" fill="none">
+                            <path d="M1.68024 0L0.740234 0.94L3.79357 4L0.740234 7.06L1.68024 8L5.68024 4L1.68024 0Z" fill="black"/>
+                        </svg></button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <section class="info">
-            <p>Logo</p>
-            <p>Address: 60-49 road 11378 new york</p>
-            <p>phone: +65 11.188.888</p>
-            <p>email: hello@colorlib.com</p>
-        </section>
-        <section class="links">
-            <p>Useful link</p>
-            <p>About us</p>
-            <p>About our shop</p>
-            <p>Delivery information</p>
-            <p>Privacy policy</p>
-            <p>Our sitemap</p>
-
-            <p>Home</p>
-            <p>Products</p>
-            <p>Contact</p>
-            <p>Stores</p>
-        </section>
-        <section class="application">
-            <p>Download App</p>
-        </section>
-        <section class="subscribe">
-            <p>Sign up for our newsletter</p>
-        </section>
-        <section class="payments">
-            <p>Payment Method</p>
-        </section>
-
-        <p>Copyright &copy;2024 all rights reserved | this template is made with </p>
-        <img class="green_heart" src="img/heart.svg" alt="любовью">
-        <p> by <a target="_blank" href="https://midis.ru/">Anton Sharov</a></p>
+        <div>
+            <div>
+                <div>
+                    <div class="info">
+                        <p>Logo</p>
+                        <img src="./img/footer_apple_qiwi.png" alt="logo">
+                        <p>Address: 60-49 road 11378 new york</p>
+                        <p>phone: +65 11.188.888</p>
+                        <p>email: hello@colorlib.com</p>
+                    </div>
+                    <div class="links">
+                        <div>
+                            <p>Useful link</p>
+                        </div>
+                        <div>
+                            <div>
+                                <p>About us</p>
+                                <p>About our shop</p>
+                                <p>Delivery information</p>
+                                <p>Privacy policy</p>
+                                <p>Our sitemap</p>
+                            </div>
+                            <div>
+                                <p>Home</p>
+                                <p>Products</p>
+                                <p>Contact</p>
+                                <p>Stores</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="application_box">
+                <div>
+                    <div class="application">
+                        <p>Download App</p>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="./img/apple_store.svg" alt="apple_store">
+                        </div>
+                        <div>
+                            <img src="./img/google_play.svg" alt="google_play">
+                        </div>
+                    </div>
+                    <div class="subscribe">
+                        <p>Sign up for our newsletter</p>
+                        <div>
+                        <input type="text" placeholder="Enter email address" size="30">
+                        <button>subscribe</button>
+                        </div>
+                    </div>
+                    <div class="payments">
+                        <p>Payment Method</p>
+                        <div>
+                            <img src="./img/payment_Visa-light.svg" alt="Visa">
+                            <img src="./img/payment_MasterCard-light.svg" alt="MasterCard">
+                            <img src="./img/payment_Maestro-light.svg" alt="Maestro">
+                            <img src="./img/payment_Cirrus-light.svg" alt="Cirrus">
+                            <img src="./img/payment_AmericanExpress-light.svg" alt="AmericanExpress">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div>
+                <p>Copyright &copy;2024 all rights reserved | this template is made with   </p>
+                <img class="green_heart" src="img/footer_green_heart.png" alt="love">
+                <p>   by <a target="_blank" href="https://midis.ru/">Anton Sharov</a></p>
+            </div>
+        </div>
     </footer>
 </body>
+
 </html>
