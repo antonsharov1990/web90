@@ -11,7 +11,7 @@
     /* https://cssfilterconverter.com/ */
     --basic-white: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(280deg) brightness(108%) contrast(102%);
     --basic-green: brightness(0) saturate(100%) invert(32%) sepia(10%) saturate(7304%) hue-rotate(135deg) brightness(100%) contrast(94%);
-  }
+}
 
 @font-face {
     font-family: "site_font_cerebri_sans_pro_semi_bold";
@@ -63,7 +63,7 @@
 
 html {
     height: 100%;
-    font-size: 1 em;
+    font-size: 1em;
     font-family: "site_font_cerebri_sans_pro_semi_bold", 'Ink Free';
     z-index: 0;
     background-color: #000000;
@@ -462,7 +462,7 @@ hr{
     padding: 1rem 1rem 1rem 2.5rem;
 }
 
-.menu>div>div>div:nth-child(1)>div:nth-child(1):p{
+.menu>div>div>div:nth-child(1)>div:nth-child(1)>p{
 
     padding: 0 3rem 0 3rem;
     vertical-align: middle;
@@ -476,7 +476,7 @@ hr{
 }
 
 .menu>div>div>div:last-child>div:last-child{
-    align-self: right;
+    /* align-self: right; */
     background: lightgreen url("./../img/arrow_down.svg" ) no-repeat right 0 center;
     -webkit-appearance: none; /* Стиль для Safari */
     -moz-appearance: none;    /* Стиль для Firefox */
@@ -553,7 +553,7 @@ hr{
     width: 28rem;
     height: 20rem;
     margin: 1rem;
-    padding: -0.2rem;
+    /* padding: -0.2rem; */
     border: 0.2rem solid rgba(255, 255, 255, 1);
     box-shadow: 0 0.1rem 0.1rem gray;
 
@@ -698,7 +698,7 @@ h2{
     width: 8rem;
     height: 10rem;
     margin: 1rem;
-    padding: -0.2rem;
+    /* padding: -0.2rem; */
     border: 0.2rem solid rgba(255, 255, 255, 1);
     box-shadow: 0 0 0.1rem lightgray;
     background-color: white;
@@ -731,7 +731,7 @@ h2{
     min-width: 18rem;
     min-height: 23rem;
     margin: 1rem;
-    padding: -0.2rem;
+    /* padding: -0.2rem; */
     border: 0.2rem solid rgba(255, 255, 255, 1);
     box-shadow: 0 0 0.1rem lightgray;
     background-color: white;
@@ -860,7 +860,7 @@ h2{
     width: 8rem;
     height: 10rem;
     margin: 1rem;
-    padding: -0.2rem;
+    /* padding: -0.2rem; */
     box-shadow: 0 0 0.1rem lightgray;
 
 }
@@ -1294,7 +1294,7 @@ footer>div:nth-child(1){
 
     display: flex;
     flex-direction: row;
-    align-items: top;
+    /* align-items: top; */
     justify-content: space-between;
 
     margin: 3rem 0 3rem 0;
@@ -1306,8 +1306,8 @@ footer>div:nth-child(1)>div:nth-child(1)
 
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: top;
+    /* align-items: left; */
+    /* justify-content: top; */
 }
 
 footer>div:nth-child(1)>div:nth-child(2)
@@ -1320,7 +1320,7 @@ footer>div:nth-child(1)>div:nth-child(1)>div
 {
     display: flex;
     flex-direction: row;
-    justify-content: top;
+    /* justify-content: top; */
     justify-content: space-between;
 }
 
@@ -1343,7 +1343,7 @@ footer>div:nth-child(1)>div:nth-child(1)>div
     
         display: flex;
         flex-direction: row;
-        align-items: top;
+        /* align-items: top; */
         justify-content: space-between;
     
         margin: 3rem 0 3rem 0;
@@ -1355,8 +1355,8 @@ footer>div:nth-child(1)>div:nth-child(1)>div
 
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: top;
+    /* align-items: left; */
+    /* justify-content: top; */
 }
 
 .info{
@@ -1413,7 +1413,7 @@ footer>div:nth-child(1)>div:nth-child(1)>div
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: top;
+    /* align-items: top; */
 
     width: 100%;
 }
@@ -1510,9 +1510,28 @@ footer>div:nth-child(1)>div:nth-child(1)>div
     margin: 1rem 0 1rem 0;
 }
 
+.info a {
+    font-family: "site_font_inter_normal", 'Ink Free';
+    margin: 1rem 0 1rem 0;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.info>a:visited,
+.info>a:link,
+.info>a:hover,
+.info>a:focus,
+.info>a:active{
+    text-decoration: none;
+    font-family: "site_font_inter_normal", 'Ink Free';
+    margin: 1rem 0 1rem 0;
+    color: #ffffff;
+}
+
 .links p{
     font-family: "site_font_inter_normal", 'Ink Free';
     margin: 1rem 0 1rem 0;
+    color: #ffffff;
 }
 
 .info>p:nth-child(1)
@@ -1702,6 +1721,7 @@ footer>div:nth-child(1)>div:nth-child(1)>div
 {
     background-color: rgba(0, 255, 157, 0.164);
     color: red;
+    transition: color 0.5s ease-in-out;
 }
 
 .good_put_away:focus,
@@ -1711,41 +1731,48 @@ footer>div:nth-child(1)>div:nth-child(1)>div
 {
     background-color: #ffffff;
     color: #000000;
+    transition: color 0.5s ease-in-out;
 }
 
 .goods_card_heart:focus,
 .goods_card_heart:hover{
     background-color: #ff00ea4f;
+    transition: color 0.5s ease-in-out;
 }
 
 .advertising_card>div>div:nth-child(3)>p:focus,
 .advertising_card>div>div:nth-child(3)>p:hover{
     background-color: #ff00ea4f;
     color: #07b601;
+    transition: color 0.5s ease-in-out;
 }
 
 .sale>div:nth-child(2):focus,
 .sale>div:nth-child(2):hover{
     background-color: #ff00ea4f;
     color: #07b601;
+    transition: color 0.5s ease-in-out;
 }
 
 .subscribe>div>button:focus,
 .subscribe>div>button:hover{
     background-color: #ff00ea4f;
     color: #07b601;
+    transition: color 0.5s ease-in-out;
 }
 
 .links>div>div>p:focus,
 .links>div>div>p:hover{
     background-color: #ff00ea4f;
     color: #07b601;
+    transition: color 0.5s ease-in-out;
 }
 
 #person:hover,
 #person:focus{
     background-color: #ff00ea4f;
     color: #07b601;
+    transition: color 0.5s ease-in-out;
 }
 
 .main-nav{
