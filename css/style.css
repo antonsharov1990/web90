@@ -1824,3 +1824,7 @@ footer>div:nth-child(1)>div:nth-child(1)>div
 
     border: none;
 }
+
+.hidden{
+    visibility: hidden;
+}
